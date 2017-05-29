@@ -1,4 +1,5 @@
 var Promise = require('../vendor/bluebird.js');
+var _ = require('../vendor/lodash.js');
 
 function formatTime(date) {
   var year = date.getFullYear()

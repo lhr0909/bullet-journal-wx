@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="note-swiper"
+          indicator-dots="{{indicator_dots}}"
+          autoplay="{{autoplay}}"
+          circular="{{circular}}"
+          current="{{current_index}}">
+    <swiper-item class="note-swiper-item" wx:for="{{notes}}" wx:key="date">
+      <view class="note-container">
+        <text>{{item.date}}</text>
+        <view class="note-item" wx:for="{{item.items}}" wx:for-item="note" wx:for-index="note_index">
+          <view wx:if="{{ note.type === 'todo' }}">
+            <checkbox value="checkbox-item-{{note_index}}" checked="{{note.done}}" /><text>{{note.content}}</text>
+          </view>
+          <view wx:elif="{{ note.type === 'event' }}">
+            <icon type="waiting" /><text>{{note.content}}</text>
+          </view>
+          <view wx:else>
+            <text>{{note.content}}</text>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

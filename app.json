@@ -1,19 +1,19 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/daily/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "子弹笔记本",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "position": "top",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/daily/index",
         "text": "当天笔记"
       },
       {

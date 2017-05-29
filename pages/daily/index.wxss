@@ -1,0 +1,8 @@
+.note-swiper {
+  height: 1000rpx;
+  width: 100%;
+}
+
+.note-item {
+  padding-top: 20rpx;
+}

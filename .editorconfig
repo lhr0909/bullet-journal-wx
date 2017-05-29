@@ -1,0 +1,19 @@
+root = true
+# 对所有文件生效
+[*]
+# 文件编码  [latin1, utf-8, utf-8-bom, utf-16be, utf-16le]
+charset = utf-8
+# 缩进类型  [space, tab]
+indent_style = space
+# 缩进数量
+indent_size = 2
+# 默认同上
+# tab_width = 4
+# 替换tab为space  [true, false]
+translate_tabs_to_spaces = true
+# 删除行尾空格  [true, false]
+trim_trailing_whitespace = true
+# 在文件最后插入一个空行  [true, false]
+insert_final_newline = true
+# 换行符格式  [lf, cr, crlf]
+end_of_line = lf
